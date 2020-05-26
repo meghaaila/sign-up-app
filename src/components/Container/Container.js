@@ -20,6 +20,7 @@ export default class Container extends Component{
   					{ value: 'gorgias', label: 'Gorgias' }]
 		}
 		this.handleClick = this.handleClick.bind(this);
+		this.handleSubmit = this.handleSubmit.bind(this);
 	}
 	handleClick = (e) =>{
 		const name= e.target.name;
@@ -29,6 +30,14 @@ export default class Container extends Component{
 		else{
 			this.setState({[name]:val})
 		}
+	}
+	handleSubmit = () =>{
+		Object.keys(this.state).map((val) => {
+			if(this.state[val] =="")
+				this.setState({checkFlag: true})
+		})
+		if(!this.state.checkFlag)
+			console.log("Submitted")
 	}
 
 	render(){
@@ -77,6 +86,9 @@ export default class Container extends Component{
 				      	<span id="terms"><input type="checkbox"  name="terms"/>I accept to the <a href="#">Terms of Service </a></span>
 				    </div>
 				  </form>
+				   <button id="footer" onClick={this.handleSubmit}>
+				    	Sign up
+				    </button>
 			</div>
 		)
 	}
