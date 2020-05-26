@@ -1,4 +1,4 @@
-To run the project use npm install and npm run.
+To run the project, after download,  use "npm install and npm start".
 
 Used following boilerplates:
 - create react-app
