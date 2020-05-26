@@ -1,0 +1,92 @@
+.container{
+	padding-top: 50px;
+	min-width: 418px;
+}
+
+input[type=text], input[type=password], .datalist{
+	outline: 0;
+	border-width: 0 0 1px;
+	border-color: #C3E4EA;
+	display: block;
+	width: 100%;
+	margin: 30px 0 0;
+	background: none;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.Dropdown-control{
+    background: url(/icons/Shape.png) no-repeat right ;
+    -webkit-appearance: none;
+    cursor: pointer;
+    outline: 0;
+	border-width: 0 0 1px;
+	border-color: #C3E4EA;
+	text-align: left;
+}
+.test{
+	width: 149px;
+}
+
+.control-class{
+  color: purple;
+  width: 149px;
+}
+
+.Dropdown-option{
+	text-align: left;
+}
+.Dropdown-option:hover {
+    background-color: #D8E8EF;
+    color: #333;
+ }
+
+
+.Dropdown-arrow-wrapper{
+	display: none;
+}
+
+
+input[type=text]:focus, input[type=password]:focus{
+	border-color: #9013FE
+}
+
+label{
+	font-size: 10px;
+	line-height: 12px;
+	color: #FF0000;
+	text-align: left;
+	display: block;
+}
+
+.hidden{
+	display: none;
+}
+
+form{
+	margin: 0 58px;
+}
+#text{
+	font-size: 30px;
+	line-height: 29px;
+	text-align: center;
+    margin: 20px 30% 36px;
+	color: #22386F;
+}
+#terms {
+	display: block;
+	color: #22386F;
+	font-size: 10.827px;
+	line-height: 13px;
+	text-align: center;
+	margin-top: 51px;
+
+	a{
+		color: #22386F;
+	}
+
+}
